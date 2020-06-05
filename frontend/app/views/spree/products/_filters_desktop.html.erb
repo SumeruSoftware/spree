@@ -3,7 +3,7 @@
     <div class="plp-filters-scroller">
       <% @available_option_types.each do |option_type| %>
         <div class="w-100 card plp-filters-card">
-          <% ot_downcase_name = option_type.filter_param %>
+          <% ot_downcase_name = option_type.name.downcase %>
           <% option_type_name = ot_downcase_name.titleize %>
           <% collapsed = params[ot_downcase_name].blank? %>
 
