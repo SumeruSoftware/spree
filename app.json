@@ -11,9 +11,9 @@
   ],
   "addons": [
     "heroku-postgresql:hobby-dev",
-    "heroku-redis:hobby-dev",
-    "sendgrid:starter",
-    "memcachedcloud:30"
+#    "heroku-redis:hobby-dev",
+#    "sendgrid:starter",
+#    "memcachedcloud:30"
   ],
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate && bundle exec rake db:seed && SKIP_SAMPLE_IMAGES=true bundle exec rake spree_sample:load"
